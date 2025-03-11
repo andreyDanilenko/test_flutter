@@ -1,0 +1,60 @@
+[
+    {
+      "categoryId": 1,
+      "products": [
+        {
+          "id": 1,
+          "name": "Смартфон Samsung Galaxy",
+          "description": "Смартфон с 6 ГБ оперативной памяти и 128 ГБ встроенной.",
+          "price": 19999,
+          "imageUrl": ""
+        },
+        {
+          "id": 2,
+          "name": "Ноутбук ASUS ROG",
+          "description": "Игровой ноутбук с процессором i7 и видеокартой RTX 3060.",
+          "price": 79999,
+          "imageUrl": ""
+        }
+      ]
+    },
+    {
+      "categoryId": 2,
+      "products": [
+        {
+          "id": 1,
+          "name": "Футболка Nike",
+          "description": "Классическая футболка из хлопка.",
+          "price": 2999,
+          "imageUrl": ""
+        },
+        {
+          "id": 2,
+          "name": "Джинсы Levi's",
+          "description": "Стильные джинсы, подходящие для любого случая.",
+          "price": 4999,
+          "imageUrl": ""
+        }
+      ]
+    },
+    {
+      "categoryId": 3,
+      "products": [
+        {
+          "id": 1,
+          "name": "Книга: Властелин колец",
+          "description": "Фантастическая эпопея Дж. Р. Р. Толкиена.",
+          "price": 599,
+          "imageUrl": ""
+        },
+        {
+          "id": 2,
+          "name": "Книга: Гарри Поттер",
+          "description": "История о волшебном мире, полном магии.",
+          "price": 799,
+          "imageUrl": ""
+        }
+      ]
+    }
+]
+  

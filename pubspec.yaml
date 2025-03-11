@@ -1,0 +1,32 @@
+name: test
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_riverpod: ^2.0.0
+  drift: ^2.0.0
+  sqlite3_flutter_libs: ^0.5.0
+  path_provider: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  drift_dev: ^2.0.0
+  build_runner: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data/profile.json
+    - assets/data/categories.json
+    - assets/data/products.json
+    - assets/images/avatar1.png
+    - assets/images/avatar2.png
+    - assets/images/avatar3.png

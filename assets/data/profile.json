@@ -1,0 +1,10 @@
+{
+    "name": "Андрей Даниленко",
+    "email": "danilenko@example.com",
+    "phone": "+7 999 123-45-67",
+    "avatars": [
+      "assets/images/avatar1.png",
+      "assets/images/avatar2.png",
+      "assets/images/avatar3.png"
+    ]
+}
