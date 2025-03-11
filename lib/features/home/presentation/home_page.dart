@@ -22,6 +22,14 @@ class _MyHomePageState extends State<MyHomePage> {
           },
         ),
         title: Text(widget.title),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.shopping_cart, size: 30),
+            onPressed: () {
+              Navigator.pushNamed(context, AppRoutes.cart);
+            },
+          ),
+        ],
       ),
       body: Center(
         child: Column(
