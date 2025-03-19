@@ -3,6 +3,10 @@ import 'package:test/features/profile/data/profile_model.dart';
 import 'package:test/features/profile/data/profile_repository.dart';
 
 class ProfilePage extends StatefulWidget {
+  const ProfilePage({
+    Key? key,
+  }) : super(key: key);
+
   @override
   _ProfilePageState createState() => _ProfilePageState();
 }
