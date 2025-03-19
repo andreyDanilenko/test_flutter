@@ -1,16 +1,50 @@
-# test
+# Проект на Flutter с Drift
 
-A new Flutter project.
+Это проект, использующий Flutter для мобильных приложений и Drift для работы с базой данных SQLite. Следуйте этим шагам, чтобы установить и запустить проект на вашем компьютере.
 
-## Getting Started
+## Шаги для запуска проекта
 
-This project is a starting point for a Flutter application.
+### 1. Установить Flutter
 
-A few resources to get you started if this is your first Flutter project:
+Для начала необходимо установить Flutter на ваш компьютер. Это можно сделать, следуя официальному руководству по установке для вашей операционной системы:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Установка Flutter для Windows](https://flutter.dev/docs/get-started/install/windows)
+- [Установка Flutter для macOS](https://flutter.dev/docs/get-started/install/macos)
+- [Установка Flutter для Linux](https://flutter.dev/docs/get-started/install/linux)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+После того как вы установите Flutter, откройте терминал и выполните команду для проверки правильности установки:
+
+```bash
+flutter doctor
+```
+
+### 2. Установить зависимости проекта
+
+```bash
+flutter pub get
+```
+
+### 3. Сгенерировать файлы базы данных
+
+```bash
+flutter pub run build_runner build
+```
+
+Автоматическая генерация 
+
+```bash
+flutter pub run build_runner watch
+```
+
+### 4. Открыть эмулятор Android или iOS
+
+```bash
+open -a Simulator
+```
+Лучший способпредварительно открыть эмулятор на ПК
+
+### 5. Запустить проект
+
+```bash
+flutter run
+```
