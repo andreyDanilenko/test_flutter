@@ -1,13 +1,10 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:test/core/db/database.dart'; // Import AppDatabase
+import 'package:test/core/db/database.dart';
 
-// Define the database provider
 final databaseProvider = Provider<AppDatabase>((ref) => AppDatabase());
 
-// Cart provider using the database provider
 final cartProvider = StateNotifierProvider<CartNotifier, List<CartItem>>(
-  (ref) =>
-      CartNotifier(ref.watch(databaseProvider)), // Pass AppDatabase instance
+  (ref) => CartNotifier(ref.watch(databaseProvider)),
 );
 
 class CartNotifier extends StateNotifier<List<CartItem>> {
@@ -21,11 +18,10 @@ class CartNotifier extends StateNotifier<List<CartItem>> {
     state = await db.getCartItems();
   }
 
-  // Add item to cart
   Future<void> addToCart(CartItemsCompanion item) async {
     final existingItem = state.firstWhere(
       (cartItem) => cartItem.id == item.id.value,
-      orElse: () => CartItem(id: 0, name: '', price: 0, quantity: 0),
+      orElse: () => const CartItem(id: 0, name: '', price: 0, quantity: 0),
     );
 
     if (existingItem.id != 0) {
@@ -36,19 +32,16 @@ class CartNotifier extends StateNotifier<List<CartItem>> {
     _loadCart();
   }
 
-  // Remove item from cart
   Future<void> removeFromCart(int id) async {
     await db.removeFromCart(id);
     _loadCart();
   }
 
-  // Clear the cart
   Future<void> clearCart() async {
     await db.clearCart();
     _loadCart();
   }
 
-  // Update quantity of item in cart
   Future<void> updateCartItem(CartItemsCompanion item) async {
     await db.updateQuantity(item.id.value, item.quantity.value);
     _loadCart();
